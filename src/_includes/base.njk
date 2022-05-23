@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>will compile code for foo</title>
+    <title>{{ title }}</title>
     
     <link rel="stylesheet" href="base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,14 +13,10 @@
 </head>
 <body>
     <header>
-        <h1>will compile code for foo</h1>
+        <h1>{{ title }}</h1>
     </header>
     <main>
-        <p>It begins.</p>
-<ul>
-<li><a href="/posts/first-post/">first post</a></li>
-</ul>
-
+        {{ content | safe }}
     </main>
 </body>
 </html>
